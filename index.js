@@ -14,10 +14,16 @@ app.engine('handlebars', exphbs.engine({ extname: 'handlebars', defaultLayout: "
 app.set('view engine', 'handlebars');
 app.set('views', './views');
 
+//Main page
 app.get('/', (req, res) => {
     res.render('home',{
         stuff: otherStuff
     });
+});
+
+//About page
+app.get('/about.html', (req, res) => {
+    res.render('about');
 });
 
 //set static folder
