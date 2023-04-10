@@ -1,2 +1,20 @@
-<h1> this is my page </h1>
-<p>{{stuff}}</p>
+
+<div class="p-4 shadow-4 rounded-3" style="background-color: hsl(0, 0%, 94%);">
+  <h2>{{stuff.companyName}} ({{stuff.symbol}})</h2>
+  <p>
+<strong>Latest price: </strong>{{stuff.latestPrice}}<br/>
+<strong>Previouse price: </strong>{{stuff.previousClose}}<br/>
+  </p>
+</div>
+
+
+<h1>  </h1>
+
+
+<!--
+<br/><br/>
+{{#each stuff}}
+  {{@key}}|{{this}}<br>
+{{/each}}
+-->
+
